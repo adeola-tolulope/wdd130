@@ -1,15 +1,11 @@
 :root {
-  --primary-color: #004080;
-  --secondary-color: #007acc;
-  --accent1-color: #f9f9f9;
-  --accent2-color: #ffcc00;
-  --heading-font: 'Bebas Neue', cursive;
-  --body-font: 'Open Sans', sans-serif;
-}
+  --primary-color: #114B5F;
+  --secondary-color: #028090;
+  --accent1-color: #E4FDE1;
+  --accent2-color: #F45B69;
 
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
+  --heading-font: 'Bebas Neue', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
 }
 
 * {
@@ -20,8 +16,8 @@ header {
 
 body {
   font-family: var(--body-font);
-  color:var(--accent1-color);
-  background-color: var(--accent1-color);
+  color: var(--accent1-color);
+  background-color: white;
 }
 
 header, main, footer {
@@ -34,9 +30,23 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 16px;
+}
+
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-weight: bold;
 }
 
 .socialmedia a {
@@ -53,18 +63,37 @@ nav, p, section, article {
   height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: var(--primary-color);
+  background-color: var(--accent1-color);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(17, 75, 95, 0.8); /* semi-transparent primary color */
   color: #fff;
+  padding: 16px;
+  max-width: 400px;
+  border-radius: 8px;
 }
 
 .hero article img {
-  width: 125%;
   float: right;
+  width: 125px;
+  margin-left: 16px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  padding: 16px;
 }
